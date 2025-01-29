@@ -1,3 +1,5 @@
+package Problem1;
+
 public class SevenPercent implements SalesTaxBehavior {
 
     // This method computes a 7% sales tax for a given value

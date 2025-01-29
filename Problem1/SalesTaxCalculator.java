@@ -1,9 +1,11 @@
+package Problem1;
+
 public class SalesTaxCalculator {
     public static void main(String[] args) {
 
         //check if the user has entered the correct number of arguments
         if (args.length != 2){
-            System.out.println("Usage: java SalesTaxCalculator <state> <value>");
+            System.out.println("Usage: java Problem1.SalesTaxCalculator <state> <value>");
             return;
         }
 

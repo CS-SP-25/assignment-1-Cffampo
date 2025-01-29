@@ -1,6 +1,8 @@
+package Problem1;
+
 public class Indiana extends State{
 
-    //constructor for Indiana
+    //constructor for Problem1.Indiana
     public Indiana(){
         salesTaxBehavior = new SevenPercent();
     }
