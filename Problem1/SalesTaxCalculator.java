@@ -28,9 +28,15 @@ public class SalesTaxCalculator {
         switch (stateName.toLowerCase()){
             case "indiana":
                 state = new Indiana();
+                state.setSalesTaxBehavior(new SevenPercent());
                 break;
             case "alaska":
                 state = new Alaska();
+                state.setSalesTaxBehavior(new NoTax());
+                break;
+            case "hawaii":
+                state = new Hawaii();
+                state.setSalesTaxBehavior(new FourPointFivePercent());
                 break;
             default:
                 System.out.println("Invalid state");
@@ -41,6 +47,8 @@ public class SalesTaxCalculator {
         state.setName(stateName);
         state.showTax(value);
         }
+
+
 
 
     }

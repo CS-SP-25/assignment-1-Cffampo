@@ -3,8 +3,6 @@ package Problem1;
 public abstract class State {
 
     private String name;
-
-    //sales tax behavior interface
     SalesTaxBehavior salesTaxBehavior;
 
     //getter method
@@ -15,6 +13,10 @@ public abstract class State {
     //setter method
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setSalesTaxBehavior(SalesTaxBehavior salesTaxBehavior) {
+        this.salesTaxBehavior = salesTaxBehavior;
     }
 
     //shows the sales tax depending on the state
