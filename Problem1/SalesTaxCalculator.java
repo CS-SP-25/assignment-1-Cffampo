@@ -43,8 +43,7 @@ public class SalesTaxCalculator {
                 return;
             }
 
-            //set the state name and show the sales tax
-        state.setName(stateName);
+
         state.showTax(value);
         }
 

@@ -4,7 +4,7 @@ public class Alaska extends State{
 
     //constructor for Problem1.Alaska
     public Alaska(){
-        salesTaxBehavior = new NoTax();
+        setName("Alaska");
     }
 
 }
